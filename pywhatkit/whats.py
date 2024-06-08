@@ -1,19 +1,21 @@
 # Vidit
-import subprocess
-import win32gui
 import os
+import subprocess
 import time
 import webbrowser as web
 from datetime import datetime
 from re import fullmatch
+from typing import *
 from typing import List
 from urllib.parse import quote
+
+import keyboard
 import paperclip
 import pyautogui as pg
 import pyperclip
-import keyboard
+import win32gui
+
 from pywhatkit.core import core, exceptions, log
-from typing import *
 
 pg.FAILSAFE = False
 

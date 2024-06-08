@@ -10,22 +10,22 @@ __VERSION__ = "Version 5.3 (Stable)"
 from platform import system
 
 from pywhatkit.ascii_art import image_to_ascii_art
+from pywhatkit.core.log import set_log_path
 from pywhatkit.handwriting import text_to_handwriting
 from pywhatkit.mail import send_hmail, send_mail
 from pywhatkit.misc import info, playonyt, search, show_history
+from pywhatkit.playonyt_stream import playonyt_stream
 from pywhatkit.sc import cancel_shutdown, shutdown
-from pywhatkit.core.log import set_log_path
 from pywhatkit.whats import (
     open_web,
+    sendimg_or_video_immediately,
+    sendwhatdoc_immediately,
     sendwhatmsg,
     sendwhatmsg_instantly,
     sendwhatmsg_to_group,
     sendwhatmsg_to_group_instantly,
     sendwhats_image,
-    sendwhatdoc_immediately,
-    sendimg_or_video_immediately,
 )
-from pywhatkit.playonyt_stream import playonyt_stream
 
 _system = system().lower()
 if _system in ("darwin", "windows"):
